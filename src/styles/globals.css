@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --color-primary: #ff4d00;
+  --color-blue-bg: #001523;
+}
+
+.link-hover {
+  color: #ff4d00;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.2s ease-in-out;
+}
+
+.link-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #ff4d00;
+  transition: width 0.3s ease-in-out;
+}
+
+.link-hover:hover::before {
+  width: 100%;
+}
+
+.link-hover:hover {
+  color: #001523;
+}
+
+.link-hover span {
+  color: inherit;
+  position: relative;
+  z-index: 1 !important;
+}
+
+.title-container {
+    height: calc(100vh - 40px);
+}
+
+@media (width > 48rem) {
+    .title-container {
+        height: calc(100vh - 80px) !important;
+    }
+}
