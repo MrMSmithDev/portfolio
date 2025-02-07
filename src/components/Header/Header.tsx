@@ -36,7 +36,7 @@ const Header = () => {
   }, [dropMenuIsActive]);
 
   return (
-    <header className="relative grid grid-cols-[auto_1fr] md:grid-cols-[2fr_2fr] content-center h-10 md:h-20 p-5 md:p-10 z-10">
+    <header className="relative grid grid-cols-[auto_1fr] md:grid-cols-[2fr_2fr] content-center h-10 md:h-20 p-2 sm:p-5 md:p-10 z-10">
       <a
         className="flex justify-center items-center border-primary border-3 border-solid h-[30px] w-[50px] md:h-[50px] cursor-pointer z-10"
         href="#hero"
@@ -66,7 +66,7 @@ const Header = () => {
           <span className="text-primary font-bold z-10">CONTACT</span>
         </button>
       </div>
-      <div className="justify-around gap-5 px-5 ml-auto flex sm:hidden ">
+      <div className="justify-around gap-5 ml-auto flex sm:hidden ">
         <button
           onClick={handleDropMenu}
           className={`${dropMenuIsActive ? 'border-primary border-solid border-3' : ''} menu-button h-[30px] w-[30px] p-0 m-0 z-10 cursor-pointer`}
