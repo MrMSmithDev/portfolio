@@ -1,0 +1,8 @@
+{
+    "name": "typewriter",
+    "version": "1.0.0",
+    "main": "Typewriter.tsx",
+    "dependencies": {
+      "react": "^19.0.0"
+    }
+}
