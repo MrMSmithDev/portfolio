@@ -7,7 +7,7 @@ interface IconProps {
 const MenuSVG: React.FC<IconProps> = ({ className = '' }) => {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none">
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g strokeLinecap="round" strokeLinejoin="round"></g>
       <g>
         <path

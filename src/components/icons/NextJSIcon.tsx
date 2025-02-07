@@ -4,7 +4,7 @@ import type { IconProps } from './types';
 const NextJSIcon: React.FC<IconProps> = ({ className = '' }) => {
   return (
     <svg className={className} fill="#000000" viewBox="0 0 24 24" role="img">
-      <g stroke-width="0"></g>
+      <g strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
         strokeLinecap="round"
