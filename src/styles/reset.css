@@ -13,6 +13,11 @@ html {
   text-size-adjust: none;
 }
 
+/* Set standard font */
+body {
+  font-family: sansation;
+}
+
 /* Remove default margin in favour of better control in authored CSS */
 body, h1, h2, h3, h4, p,
 figure, blockquote, dl, dd {
