@@ -1,8 +1,11 @@
-import { MenuSVG } from '@components/icons';
-import React, { useEffect, useState } from 'react';
+import { MenuIcon } from '@components/icons';
+import React, { useEffect, useRef, useState } from 'react';
+import { animateInView } from 'src/hooks/animateInView';
 
 const Header = () => {
   const [dropMenuIsActive, setDropMenuIsActive] = useState<boolean>(false);
+  const elRef = useRef(null);
+  const isVisible = animateInView<HTMLDivElement>(elRef);
 
   function handleScroll(id: string): void {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -36,7 +39,12 @@ const Header = () => {
   }, [dropMenuIsActive]);
 
   return (
-    <header className="relative grid grid-cols-[auto_1fr] md:grid-cols-[2fr_2fr] content-center h-10 md:h-20 p-2 sm:p-5 md:p-10 z-10">
+    <header
+      ref={elRef}
+      className={`relative grid grid-cols-[auto_1fr] md:grid-cols-[2fr_2fr] content-center h-10 md:h-20 p-2 sm:p-5 md:p-10 z-10 transition-all duration-700 ease-out transform ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'
+      }`}
+    >
       <a
         className="flex justify-center items-center border-primary border-3 border-solid h-[30px] w-[50px] md:h-[50px] cursor-pointer z-10"
         href="#hero"
@@ -71,7 +79,7 @@ const Header = () => {
           onClick={handleDropMenu}
           className={`${dropMenuIsActive ? 'border-primary border-solid border-3' : ''} menu-button h-[30px] w-[30px] p-0 m-0 z-10 cursor-pointer`}
         >
-          <MenuSVG />
+          <MenuIcon />
         </button>
       </div>
       <div

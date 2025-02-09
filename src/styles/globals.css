@@ -93,7 +93,7 @@
 }
 
 .button-fade-in {
-  animation: fade-in 0.5s ease-in-out 2s 1 forwards;
+  animation: fade-in 3s ease-in-out 2s 1 forwards;
   opacity: 0;
 }
 
