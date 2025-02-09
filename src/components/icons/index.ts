@@ -1,6 +1,7 @@
-import GitHubSVG from './Github';
+import GitHubIcon from './Github';
 import JavascriptIcon from './Javascript';
-import MenuSVG from './Menu';
+import LinkedInIcon from './LinkedInIcon';
+import MenuIcon from './Menu';
 import MongoDBIcon from './MongoDBIcon';
 import NextJSIcon from './NextJSIcon';
 import NodeJSIcon from './NodeJSIcon';
@@ -9,9 +10,10 @@ import SCSSIcon from './ScssIcon';
 import TypescriptIcon from './Typescript';
 
 export {
-  GitHubSVG,
+  GitHubIcon,
   JavascriptIcon,
-  MenuSVG,
+  LinkedInIcon,
+  MenuIcon,
   MongoDBIcon,
   NextJSIcon,
   NodeJSIcon,
