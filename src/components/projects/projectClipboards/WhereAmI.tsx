@@ -33,7 +33,7 @@ const WhereAmIClipboard: React.FC = () => {
             </span>
           </a>
           <a
-            href="https://github.com/MrMSmithDev/where-am-i/deployments/github-pages"
+            href="https://github.com/MrMSmithDev/where-am-i"
             className="flex items-center justify-center text-center p-2 link-hover h-8 md:h-10 w-[100px] my-auto border-b-solid border-b-2 border-b-gray-100 cursor-pointer"
           >
             <span className="text-primary font-bold z-10 tracking-wider">
