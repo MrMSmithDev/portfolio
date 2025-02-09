@@ -26,6 +26,8 @@ const ProgressPalClipboard: React.FC = () => {
         <div className="flex justify-center md:justify-start gap-5 mt-5 w-full">
           <a
             href="https://github.com/MrMSmithDev/progresspal_client"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center text-center p-2 link-hover h-8 md:h-10 w-[100px] my-auto border-b-solid border-b-2 border-b-gray-100 cursor-pointer"
           >
             <span className="text-primary font-bold z-10 tracking-wider">
@@ -34,6 +36,8 @@ const ProgressPalClipboard: React.FC = () => {
           </a>
           <a
             href="https://github.com/MrMSmithDev/progresspal_server"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center text-center p-2 link-hover h-8 md:h-10 w-[100px] my-auto border-b-solid border-b-2 border-b-gray-100 cursor-pointer"
           >
             <span className="text-primary font-bold z-10 tracking-wider">
