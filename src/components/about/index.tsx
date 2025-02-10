@@ -4,17 +4,30 @@ import Marquee from './Marquee/Marquee';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="flex flex-col justify-center min-h-screen bg-gray-100 px-5 md:px-20">
+    <section
+      id="about"
+      className="flex flex-col justify-center min-h-screen bg-gray-100 px-5 md:px-20"
+    >
       <div className="flex flex-col gap-5 py-5 md:py-10 items-center">
         <Typewriter
-          textArr={['Passionate', 'Motivated', 'Proactive', 'Driven', 'Collaborative']}
+          textArr={[
+            'Passionate',
+            'Motivated',
+            'Proactive',
+            'Driven',
+            'Collaborative',
+          ]}
           className="h-5 md:h-10 text-xl md:text-3xl text-gray-700 tracking-wider"
         />
         <div className="bg-primary h-1 w-20"></div>
       </div>
       <div className="flex flex-col md:grid grid-cols-[auto_1fr]">
         <div className="flex justify-center items-center">
-          <img className="rounded border-10 border-solid border-gray-200 shadow-xl rotate-9 bg-red-500 h-50 w-50 mr-5" />
+          <img
+            src="/assets/images/profile_img.webp"
+            className="rounded border-10 border-solid border-gray-200 shadow-xl rotate-9 bg-red-500 w-50 mr-5"
+            alt="Image of Michael"
+          />
         </div>
         <div className="flex flex-col gap-5 py-5 md:mx-10 md:py-10 justify-center items-center">
           <h1 className="text-xl md:text-2xl font-bold text-gray-700 tracking-wide mr-auto">
@@ -39,9 +52,8 @@ const About: React.FC = () => {
             collaborative environments. I’m eager to contribute to impactful
             projects, continue growing as a developer, and create meaningful
             digital experiences. Outside of coding, I’m an avid guitarist with
-            over 20 years of experience and a five-a-side football
-            enthusiast, though my teammates might debate my resemblance to Denis
-            Law!
+            over 20 years of experience and a five-a-side football enthusiast,
+            though my teammates might debate my resemblance to Denis Law!
           </p>
         </div>
       </div>
