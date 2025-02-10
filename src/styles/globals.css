@@ -29,6 +29,10 @@
   --font-sansation: sansation;
 }
 
+.header {
+
+}
+
 .link-hover {
   color: #ffe066;
   position: relative;
@@ -71,6 +75,16 @@
   }
 }
 
+.slide-from-top {
+  opacity: 0;
+  animation: slide-in-top, fade-in;
+  animation-duration: 1.5s, 1.5s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: 1, 1;
+  animation-direction: reverse, forwards;
+  animation-fill-mode: forwards, forwards;
+}
+
 .slide-from-left {
   animation: slide-in-left, fade-in;
   animation-duration: 1.5s, 1.5s;
@@ -104,6 +118,16 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
 

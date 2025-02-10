@@ -1,11 +1,7 @@
 import { MenuIcon } from '@components/icons';
 import React, { useEffect, useRef, useState } from 'react';
-import { animateInView } from 'src/hooks/animateInView';
-
 const Header = () => {
   const [dropMenuIsActive, setDropMenuIsActive] = useState<boolean>(false);
-  const elRef = useRef(null);
-  const isVisible = animateInView<HTMLDivElement>(elRef);
 
   function handleScroll(id: string): void {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -39,12 +35,7 @@ const Header = () => {
   }, [dropMenuIsActive]);
 
   return (
-    <header
-      ref={elRef}
-      className={`relative grid grid-cols-[auto_1fr] md:grid-cols-[2fr_2fr] content-center h-10 md:h-20 p-2 sm:p-5 md:p-10 z-10 transition-all duration-700 ease-out transform ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'
-      }`}
-    >
+    <header className="relative grid grid-cols-[auto_1fr] md:grid-cols-[2fr_2fr] content-center h-10 md:h-20 p-2 sm:p-5 md:p-10 z-10 slide-from-top">
       <a
         className="flex justify-center items-center border-primary border-3 border-solid h-[30px] w-[50px] md:h-[50px] cursor-pointer z-10"
         href="#hero"
@@ -54,7 +45,7 @@ const Header = () => {
           MJS<span className="text-xl md:text-3xl">.</span>
         </span>
       </a>
-      <div className=" hidden sm:flex justify-around gap-5 px-5 ml-auto">
+      <nav className=" hidden sm:flex justify-around gap-5 px-5 ml-auto">
         <button
           onClick={() => handleScroll('#about')}
           className="flex items-center justify-center text-center p-2 link-hover h-8 md:h-10 w-full my-auto border-b-solid border-b-2 border-b-gray-100 cursor-pointer"
@@ -73,7 +64,7 @@ const Header = () => {
         >
           <span className="text-primary font-bold z-10">CONTACT</span>
         </button>
-      </div>
+      </nav>
       <div className="justify-around gap-5 ml-auto flex sm:hidden ">
         <button
           onClick={handleDropMenu}
