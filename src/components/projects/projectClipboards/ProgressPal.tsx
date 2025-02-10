@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { animateInView } from 'src/hooks/animateInView';
+import BadgeSet from './BadgeSet';
 
 const ProgressPalClipboard: React.FC = () => {
   const elRef = useRef(null);
@@ -8,22 +9,35 @@ const ProgressPalClipboard: React.FC = () => {
   return (
     <div
       ref={elRef}
-      className={`flex flex-col flex my-10 md:flex-row mr-auto transition-all duration-700 ease-out transform ${
+      className={`flex flex-col flex my-10 lg:flex-row mr-auto transition-all duration-700 ease-out transform ${
         isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
       }`}
     >
       <img
-        className="w-[100%] md:w-[45vw] bg-gray-500 border-10 border-gray-100 border-solid"
+        className="w-[100%] lg:w-[45vw] bg-gray-500 border-10 border-gray-100 border-solid"
         src="/assets/images/progress_pal.webp"
       />
-      <div className="md:ml-10 text-center md:text-left">
+      <div className="lg:ml-10 text-center lg:text-left">
         <div className="text-gray-100">
           <p className="md:text-lg">
-            <span className="font-bold">Progress Pal</span> - A gym progress
-            tracking app, currently in progress
+            <span className="font-bold">Progress Pal</span> - A gym tracking app
+            that helps users log exercises, weights, distances, and body weight
+            while setting and monitoring fitness targets. Currently in progress
           </p>
         </div>
-        <div className="flex justify-center md:justify-start gap-5 mt-5 w-full">
+        <div className="mt-5 flex flex-wrap gap-2 justify-center lg:justify-start">
+          <BadgeSet
+            titleArr={[
+              'React.js',
+              'Next.js',
+              'Express.js',
+              'MongoDB',
+              'Typescript',
+              'Tailwind',
+            ]}
+          />
+        </div>
+        <div className="flex justify-center lg:justify-start gap-5 mt-5 w-full">
           <a
             href="https://github.com/MrMSmithDev/progresspal_client"
             target="_blank"
