@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
       </h1>
       <div className="bg-primary h-1 w-20 my-10"></div>
       <div className="flex flex-col items-center md:w-[50vw] mx-10">
-        <h5 className="font-bold tracking-wider">Lets connect!</h5>
+        <h2 className="font-bold tracking-wider">Lets connect!</h2>
         <p className="text-center mt-2">
           Feel free to reach out on LinkedIn, or check out my other work on
           GitHub. I would love to hear from you.
@@ -22,16 +22,18 @@ const Contact: React.FC = () => {
             href="https://github.com/MrMSmithDev/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-[50px] h-[50px]"
+            className="w-[50px] h-[50px] hover:animate-gelatine"
           >
+            <span className="sr-only">GitHub</span>
             <GitHubIcon />
           </a>
           <a
             href="https://www.linkedin.com/in/michael-s-bbbaab345/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-[50px] h-[50px]"
+            className="w-[50px] h-[50px] hover:animate-gelatine"
           >
+            <span className="sr-only">LinkedIn</span>
             <LinkedInIcon />
           </a>
         </div>
