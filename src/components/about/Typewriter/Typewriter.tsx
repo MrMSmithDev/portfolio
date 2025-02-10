@@ -47,7 +47,9 @@ const Typewriter = ({ textArr, className = '', speed = 150, pause = 800 }) => {
   }, [charIndex, isDeleting, textArr, textIndex, speed, pause]);
 
   return (
-    <p className={`${className} relative inline-block select-none typewriter`}>
+    <p
+      className={`${className} relative inline-block select-none after:content-['|'] after:ml-[2px] after:height-[1em] after:relative after:inline-block after:animate-type-cursor`}
+    >
       {currentText}
       <span className="cursor"></span>
     </p>
