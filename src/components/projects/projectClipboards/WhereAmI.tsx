@@ -32,9 +32,9 @@ const WhereAmIClipboard: React.FC = () => {
             href="https://mrmsmithdev.github.io/where-am-i/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center text-center p-2 link-hover h-8 md:h-10 w-[100px] my-auto border-b-solid border-b-2 border-b-gray-100 cursor-pointer"
+            className="relative flex items-center justify-center text-center text-primary p-2 h-8 md:h-10 w-[100px] my-auto border-b-solid border-b-2 border-b-gray-100 cursor-pointer before:content-[''] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-primary before:transition-all before:duration-300 before:ease-in-out hover:text-blue-bg hover:before:w-full"
           >
-            <span className="text-primary font-bold z-10 tracking-wider">
+            <span className="font-bold z-10 tracking-wider">
               View
             </span>
           </a>
@@ -42,9 +42,9 @@ const WhereAmIClipboard: React.FC = () => {
             href="https://github.com/MrMSmithDev/where-am-i"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center text-center p-2 link-hover h-8 md:h-10 w-[100px] my-auto border-b-solid border-b-2 border-b-gray-100 cursor-pointer"
+            className="relative flex items-center justify-center text-center text-primary p-2 h-8 md:h-10 w-[100px] my-auto border-b-solid border-b-2 border-b-gray-100 cursor-pointer before:content-[''] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-primary before:transition-all before:duration-300 before:ease-in-out hover:text-blue-bg hover:before:w-full"
           >
-            <span className="text-primary font-bold z-10 tracking-wider">
+            <span className="font-bold z-10 tracking-wider">
               GitHub
             </span>
           </a>
