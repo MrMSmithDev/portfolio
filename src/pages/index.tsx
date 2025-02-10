@@ -10,6 +10,7 @@ const Index: React.FC = () => {
   return (
     <>
       <Head>
+        <html lang="en"></html>
         <title>Michael Smith</title>
         <meta name="description" content="A web development portfolio" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
