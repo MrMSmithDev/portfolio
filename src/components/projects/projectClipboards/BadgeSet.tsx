@@ -18,7 +18,7 @@ interface BadgeSetProps {
 
 const BadgeSet: React.FC<BadgeSetProps> = ({ titleArr }) => {
   const badgeArr = useMemo(() => {
-    return titleArr.map((title) => <Badge title={title} />);
+    return titleArr.map((title) => <Badge title={title} key={title} />);
   }, [titleArr]);
 
   return <>{badgeArr}</>;

@@ -50,6 +50,7 @@ const MemoryCardsClipboard: React.FC = () => {
       <img
         className="w-[100%] lg:w-[45vw] bg-gray-500 border-10 border-gray-100 border-solid"
         src="/assets/images/memory_cards.webp"
+        alt="Example image of Mind Training"
       />
     </div>
   );

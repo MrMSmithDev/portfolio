@@ -16,6 +16,7 @@ const ProgressPalClipboard: React.FC = () => {
       <img
         className="w-[100%] lg:w-[45vw] bg-gray-500 border-10 border-gray-100 border-solid"
         src="/assets/images/progress_pal.webp"
+        alt="Example image of Progress Pal"
       />
       <div className="lg:ml-10 text-center lg:text-left">
         <div className="text-gray-100">
@@ -34,6 +35,7 @@ const ProgressPalClipboard: React.FC = () => {
               'MongoDB',
               'Typescript',
               'Tailwind',
+              'Node',
             ]}
           />
         </div>
