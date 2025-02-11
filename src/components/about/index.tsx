@@ -21,7 +21,7 @@ const About: React.FC = () => {
         />
         <div className="bg-primary h-1 w-20"></div>
       </div>
-      <div className="flex flex-col md:grid grid-cols-[auto_1fr]">
+      <div className="flex flex-col lg:grid grid-cols-[auto_1fr]">
         <div className="flex justify-center items-center">
           <img
             src="/assets/images/profile_img.webp"

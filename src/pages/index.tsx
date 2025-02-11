@@ -4,7 +4,7 @@ import Hero from '@components/hero';
 import Projects from '@components/projects';
 import React from 'react';
 import Contact from '@components/contact';
-import { Curves } from '@components/utils';
+import { CurveBottom, CurveTop } from '@components/utils';
 
 const Index: React.FC = () => {
   return (
@@ -19,13 +19,9 @@ const Index: React.FC = () => {
       <main className="bg-blue-bg">
         <Hero />
         <About />
-        <div className="leading-0 text-[0px]">
-          <Curves from="#f3f4f6" to="blue-bg" />
-        </div>
+        <CurveTop />
         <Projects />
-        <div className="leading-0 text-[0px]">
-          <Curves from="#001523" to="gray-100" />
-        </div>
+        <CurveBottom />
         <Contact />
       </main>
     </>
