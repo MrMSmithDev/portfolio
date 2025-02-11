@@ -4,13 +4,13 @@ import Header from '@components/Header/Header';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="min-h-screen">
+    <section id="hero" className="min-h-screen overflow-hidden !p-0 !m-0">
       <video
         autoPlay
         loop
         muted
         playsInline
-        className="absolute w-full h-full object-cover z-0"
+        className="absolute block w-full h-full object-cover z-0 !p-0 !m-0"
       >
         <track
           src="/assets/video/silent-captions.vtt"
