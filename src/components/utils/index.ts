@@ -1,3 +1,3 @@
-import Curves from './Curves';
+import { CurveBottom, CurveTop } from './Curves';
 
-export { Curves };
+export { CurveBottom, CurveTop };
