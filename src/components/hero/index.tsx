@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         loop
         muted
         playsInline
-        className="absolute block w-full h-full object-cover z-0 !p-0 !m-0"
+        className="absolute block w-full h-[100lvh] object-cover z-0 !p-0 !m-0"
       >
         <track
           src="/assets/video/silent-captions.vtt"

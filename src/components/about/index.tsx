@@ -8,7 +8,7 @@ const About: React.FC = () => {
       id="about"
       className="flex flex-col justify-center min-h-screen bg-gray-100 px-5 md:px-20"
     >
-      <div className="flex flex-col gap-5 py-5 md:py-10 items-center">
+      <div className="flex flex-col gap-5 mt-5 py-5 md:py-10 items-center">
         <Typewriter
           textArr={[
             'Passionate',
