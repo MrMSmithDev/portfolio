@@ -55,7 +55,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 grid grid-cols-[auto_1fr] md:grid-cols-[2fr_2fr] content-center h-10 md:h-20 p-2 sm:p-5 md:p-10 z-10 slide-from-top border-b-solid border-b-primary ${
+      className={`fixed top-0 left-0 right-0 grid grid-cols-[auto_1fr] md:grid-cols-[2fr_2fr] content-center h-10 md:h-20 p-2 sm:p-5 md:p-10 z-10 slide-from-top border-b-solid border-b-primary z-100 ${
         blurredHeader ? 'border-b-2 backdrop-blur-xl' : 'border-0'
       }`}
     >
