@@ -4,7 +4,7 @@ import Header from '@components/Header/Header';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="min-h-[100svh] overflow-hidden !p-0 !m-0">
+    <section id="hero" className="min-h-[100lvh] overflow-hidden !p-0 !m-0">
       <video
         autoPlay
         loop

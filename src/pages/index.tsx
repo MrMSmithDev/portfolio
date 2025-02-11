@@ -19,9 +19,13 @@ const Index: React.FC = () => {
       <main className="bg-blue-bg">
         <Hero />
         <About />
-        <Curves from="#f3f4f6" to="blue-bg" />
+        <div className="leading-0">
+          <Curves from="#f3f4f6" to="blue-bg" />
+        </div>
         <Projects />
-        <Curves from="#001523" to="gray-100" />
+        <div className="leading-0 text-[0px] overflow-hidden">
+          <Curves from="#001523" to="gray-100" />
+        </div>
         <Contact />
       </main>
     </>
